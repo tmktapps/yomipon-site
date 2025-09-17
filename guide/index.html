@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>使い方 | よみポン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="よみポンの基本操作ガイド。バーコード読み取りで本を登録、スタンプラリーと読書データの見方を説明します。">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    /* --- ガイド専用の軽い追加 --- */
+    .page{max-width:980px;margin:0 auto;padding:20px}
+    .breadcrumbs{font-size:.9rem;color:#666;margin:6px 0 12px}
+    .toc{border:1px solid #eee;border-radius:12px;padding:12px 14px;margin:8px 0 18px}
+    .toc a{display:block;margin:6px 0;text-decoration:none}
+    .step-list{display:grid;grid-template-columns:1fr;gap:16px;margin:14px 0}
+    @media(min-width:760px){.step-list{grid-template-columns:1fr 1fr}}
+    .step{
+      border:1px solid #eee;background:#fff;border-radius:14px;padding:14px;
+      box-shadow:0 6px 18px rgba(0,0,0,.05)
+    }
+    .step h3{display:flex;align-items:center;gap:8px;margin:4px 0 8px}
+    .num{
+      display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:50%;
+      background:var(--brand);color:#fff;font-weight:700;font-size:.95rem
+    }
+    .shot{
+      display:block;width:100%;max-width:720px;margin:8px auto 0;border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.08)
+    }
+    .tip{background:#fff7ea;border:1px solid #ffe1b3;border-radius:10px;padding:10px 12px;margin:12px 0}
+    .navlinks{margin-top:26px;text-align:center}
+    .navlinks a{margin:0 10px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="../">よみポン</a>
+      <div class="links">
+        <a href="./">使い方</a>
+        <a href="../support/">サポート</a>
+        <a href="../privacy/">プライバシー</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="breadcrumbs">Home › 使い方</div>
+    <h1>よみポンの使い方</h1>
+    <p>バーコードでサクッと登録、スタンプラリーで楽しく継続。ここでは最短で始められる基本操作を紹介します。</p>
+
+    <div class="toc">
+      <strong>目次</strong>
+      <a href="#start">1. はじめての登録（3ステップ）</a>
+      <a href="#edit">2. 本の詳細を編集する</a>
+      <a href="#history">3. 履歴からさがす</a>
+      <a href="#analysis">4. データの見方</a>
+      <a href="#trouble">5. 困ったときは</a>
+    </div>
+
+    <section id="start">
+      <h2>1. はじめての登録（3ステップ）</h2>
+      <div class="step-list">
+        <article class="step">
+          <h3><span class="num">1</span> アプリを開いて「とうろく」へ</h3>
+          <p>ホーム画面右下のボタンからバーコードスキャンを開始します。</p>
+          <img class="shot" src="../assets/home.png" alt="ホーム（スタンプラリー）画面">
+        </article>
+
+        <article class="step">
+          <h3><span class="num">2</span> バーコードを読み取る</h3>
+          <p>ISBN（<strong>978 / 979</strong> で始まるコード）にカメラを合わせます。うまく合わないときは明るい場所で再トライ。</p>
+          <img class="shot" src="../assets/register-initial.png" alt="バーコード読み取り開始画面">
+          <img class="shot" src="../assets/register-input.png" alt="読み取り後の入力確認画面">
+        </article>
+
+        <article class="step">
+          <h3><span class="num">3</span> 確認して「とうろく」</h3>
+          <p>タイトルや著者名を確認して登録。登録に成功するとスタンプが1つ増えます。</p>
+          <img class="shot" src="../assets/register-success.png" alt="登録成功の表示">
+        </article>
+      </div>
+
+      <div class="tip">
+        <strong>ヒント：</strong> 同じ本は何度でも登録できます。読んだ回数や借りた回数のカウントにも使えます。
+      </div>
+    </section>
+
+    <section id="edit">
+      <h2>2. 本の詳細を編集する</h2>
+      <p>登録後に誤りに気づいたら、<strong>本の詳細画面</strong>からタイトル・著者名・メモ（プレミアム）を編集できます。</p>
+      <img class="shot" src="../assets/book-detail.png" alt="本の詳細画面">
+    </section>
+
+    <section id="history">
+      <h2>3. 履歴からさがす</h2>
+      <p><strong>りれき</strong>画面の検索ボックスで、タイトルや著者名を入力して絞り込みができます。</p>
+      <img class="shot" src="../assets/history.png" alt="履歴画面と検索ボックス">
+    </section>
+
+    <section id="analysis">
+      <h2>4. データの見方</h2>
+      <p><strong>データ</strong>画面では、月ごとの登録数・お気に入り数・累計登録数などをグラフで確認できます。</p>
+      <img class="shot" src="../assets/analysis.png" alt="読書データの分析画面">
+    </section>
+
+    <section id="trouble">
+      <h2>5. 困ったときは</h2>
+      <ul>
+        <li><strong>読み取れない：</strong> 対応は ISBN（978/979）です。反射や暗さを避け、端末のカメラ許可をONに。</li>
+        <li><strong>失敗表示：</strong> バーコードが不鮮明な場合は手入力でも登録できます。</li>
+        <li><strong>データが見えない：</strong> 直近で登録した本が反映されないときはアプリを再起動してください。</li>
+      </ul>
+      <img class="shot" src="../assets/register-failed.png" alt="登録失敗の表示">
+      <p class="navlinks">
+        不明点は <a href="../support/">サポート（Q&A）</a> へ。
+      </p>
+    </section>
+
+    <div class="navlinks">
+      <a href="../">← ホームへ戻る</a> / <a href="../support/">サポートへ</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 よみポン</small>
+  </footer>
+</body>
+</html>
